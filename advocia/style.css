@@ -22,7 +22,7 @@
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --radius: 10px;
   --container: 1200px;
-  --transition: 0.3s ease;
+--transition: 0.2s ease;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -74,8 +74,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 /* ============ HEADER ============ */
 .header {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  background: rgba(10, 16, 32, 0.85);
-  backdrop-filter: blur(14px);
+  background: rgba(10, 16, 32, 0.95);
   border-bottom: 1px solid transparent;
   transition: all var(--transition);
   min-height: 60px;
@@ -285,7 +284,7 @@ url("fundo-hero.png");
 .card-details {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease, padding 0.5s ease, opacity 0.5s ease;
+  transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
   opacity: 0;
 }
 .card.expanded .card-details {
@@ -322,7 +321,7 @@ url("fundo-hero.png");
   gap: 8px;
 }
 .toggle-btn i {
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
 }
 .card.expanded .toggle-btn i {
   transform: rotate(180deg);
@@ -378,7 +377,7 @@ url("fundo-hero.png");
 .faq-item.open .faq-q i { transform: rotate(45deg); }
 .faq-a {
   max-height: 0; overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.4s ease;
+  transition: max-height 0.3s ease, padding 0.3s ease;
   padding: 0 26px;
 }
 .faq-item.open .faq-a { max-height: 300px; padding: 0 26px 22px; }
@@ -448,7 +447,7 @@ url("fundo-hero.png");
   border-radius: 50%;
   background: var(--border-light);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 .testimonial-dot.active {
   background: var(--gold);
@@ -574,12 +573,12 @@ url("fundo-hero.png");
   0% { background-position: -200% 0; }
   100% { background-position: 200% 0; }
 }
-.reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+.reveal { opacity: 0; transform: translateY(15px); transition: all 0.25s ease; }
 .reveal.visible { opacity: 1; transform: translateY(0); }
 
 /* Novo: Animações de hover avançadas */
 .card, .diff, .step, .contact-item {
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.2s ease;
 }
 .card:hover, .diff:hover {
   transform: translateY(-8px);
@@ -605,7 +604,7 @@ url("fundo-hero.png");
   left: 100%;
 }
 .btn-outline {
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 .btn-outline:hover {
   background: var(--gold);

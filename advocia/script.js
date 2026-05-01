@@ -84,9 +84,9 @@ const revealEls = document.querySelectorAll(
 
 revealEls.forEach((el, i) => {
   el.style.opacity = 0;
-  el.style.transform = 'translateY(40px)';
-  el.style.transition = 'all 0.6s ease';
-  el.style.transitionDelay = `${i * 0.08}s`;
+  el.style.transform = 'translateY(15px)';
+  el.style.transition = 'all 0.2s ease';
+  el.style.transitionDelay = `${i * 0.03}s`;
 });
 
 const observer = new IntersectionObserver(entries => {
