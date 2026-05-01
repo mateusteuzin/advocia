@@ -129,7 +129,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   align-items: center;
   background:
     linear-gradient(90deg, rgba(3, 10, 22, 0.96) 0%, rgba(3, 10, 22, 0.88) 30%, rgba(3, 10, 22, 0.35) 62%, rgba(3, 10, 22, 0.12) 100%),
-url("advocia/fundo-hero.png");
+url("fundo-hero.png");
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
